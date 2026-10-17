@@ -52,17 +52,10 @@ namespace TechFix_API.Migrations
                     b.Property<int>("ClienteId")
                         .HasColumnType("INTEGER");
 
-                    b.Property<DateTime>("DataCriacao")
+                    b.Property<DateTime>("DataAbertura")
                         .HasColumnType("TEXT");
 
-                    b.Property<DateTime?>("DataFinalizacao")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("DescricaoProblema")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Equipamento")
+                    b.Property<string>("Descricao")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
